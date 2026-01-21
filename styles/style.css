@@ -1,5 +1,5 @@
 .embers {
-  background-image: url('images/embers_bg.jpg');
+  background-image: url('../images/embers_bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 
 .y {
-  background-image: url('images/csbg2.jpg');
+  background-image: url('../images/csbg2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 }
 
 body.x {
-  background-image: url('images/csbg.jpg');
+  background-image: url('../images/csbg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,3 +53,8 @@ p {
 body p:nth-of-type(2) {
   text-indent: 0px; 
 }
+
+a {
+  color: magenta; 
+}
+
