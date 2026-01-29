@@ -1,0 +1,234 @@
+/* HEADER */
+
+.portrait {
+    height:150px;
+    width:auto;
+    margin: 25px;
+    float: left;
+}
+
+.purple-box {
+    position: relative;
+    width: 94%;
+    height: 200px;
+    background-color: mediumpurple;
+    margin: 20px;
+}
+
+/* MENU */
+
+.menu {
+    height: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    color: white;
+    text-align: center;
+}
+
+a {
+    background-color: indigo; 
+    color: plum;
+    border-radius: 10px;
+    padding: 30px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: plum;
+    color: indigo;
+}
+
+/* ASIDE 1 */
+
+.aside1 {
+    position: sticky;
+    width: 20vw;
+    height: auto;
+    border-color: mediumpurple;
+    border-style: solid;
+    margin: 20px;
+    float: left;
+}
+
+/* ASIDE 2 */
+
+.aside2 {
+    width: 20vw;
+    height: auto;
+    margin: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    width: 55vw;
+    height: auto;
+    background-color: mediumpurple;
+    display: inline-block;
+}
+
+section {
+    background-color: lavender;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+    height: 35%;
+}
+
+.aside3 {
+    position: absolute;
+    width: 20%;
+    height: 89%;
+    right: 0%;
+    top: 1%;
+    /* border-color: mediumpurple;
+    border-style: solid; */
+}
+
+/* FOOTER */
+
+.footer {
+    height: 150px;
+}
+
+.socials {
+    position: absolute;
+    right: 0%;
+    bottom: 0%
+}
+
+.footer-image {
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+    float: right;
+    mask-mode: alpha;
+    filter: grayscale(100%);
+}
+
+.footer-image:hover {
+    filter: none;
+}
+
+.links-a {
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    top: 2%;
+    left: 1%;
+}
+
+.links-b {
+    position: absolute;
+    width: 10%;
+    height: 50%; 
+    left: 11%;
+    top: 2%
+}
+
+a.footlink {
+    background-color: indigo; 
+    color: plum;
+    border-radius: 10px;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+a.footlink:hover {
+    background-color: plum;
+    color: indigo;
+}
+
+/* ASIDE 2 */
+
+ol {
+    background-color: lightskyblue;
+    padding: 10px;
+    list-style: none;
+}
+
+ol li {
+    color: white;
+    background-color: dodgerblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.list-bullet {
+    padding: 10px;
+}
+
+.list-text {
+    background-color: mediumblue;
+    padding: 10px;
+}
+
+/* ASIDE 3 */
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  width: 190px;
+  color: black;
+}
+
+.todo-list li {
+  padding: 11px 15px 11px 40px;
+  position: relative;
+  color: black
+}
+
+
+.todo-list li:nth-child(even) {
+  background-color: #e8f5e9; 
+}
+
+
+.todo-list li:nth-child(odd) {
+  background-color: #c8e6c9;
+}
+
+/* Image Bullet (Unchecked) */
+.todo-list li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/empty_box.png'); /* Placeholder empty box */
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* "Done" State*/
+.todo-list li.done {
+  background-color: gray !important; /* Forces grey background */
+  text-decoration: line-through;
+}
+
+.todo-list li.done::before {
+  background-image: url('../images/checked_box.png'); /* Placeholder checked box */
+}
+
+/* Delete Button */
+.todo-list li::after {
+  content: "✖"; /* Cross mark */
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: darkred;
+}
+
+
