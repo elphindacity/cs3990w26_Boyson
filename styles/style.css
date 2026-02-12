@@ -1,0 +1,235 @@
+/* Mobile First */
+
+.main-contain {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+body {
+    color: white;
+}
+
+.header {
+    background-color: rgb(60, 20, 80);
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    background-color: darkorchid;
+    padding: 5px;
+}
+
+li {
+    color: black;
+}
+
+.panel-container {
+  display: grid;
+}
+
+.panel {
+    grid-area: 1 / 1;
+    color: rgb(60, 20, 80 );
+    display:none;
+}
+
+#tab0 {
+  display: block; 
+}
+
+body:has(.panel:target) #tab0:not(:target) {
+  display: none;
+}
+
+.panel:target {
+  display: block;
+}
+
+
+.tab-menu ul {
+  display: flex;             
+  list-style-type: none;
+  padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tab-menu li {
+    background-color: darkorchid;
+    border-style: ridge;
+    border-color: azure;
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    transform: skewX(-15deg) scaleY(0.75);
+}
+
+.tab-menu li:hover{
+    transform: skewX(0deg);
+    background: linear-gradient(darkorchid, rgb(60, 20, 80 ));
+}
+
+.tab-menu li:hover a {
+    color: white;
+    font-weight: bold;
+}
+
+.tab-link {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.panel p {
+    background-color: transparent;
+}
+
+.provinces {
+    margin-left: 40px;
+    padding-left: 40px;
+}
+
+.AB { list-style-image: url(../images/alberta.png); }
+
+.BC { list-style-image: url(../images/bc2.png); }
+
+span {
+    font-style: italic;
+    display: none;
+}
+
+.provinces li:hover span { 
+    display: inline;
+}
+
+
+.tab-menu ul li {
+    position: relative;
+}
+
+
+.dropdown {
+    display: none !important;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 10;
+}
+
+
+.tab-menu li:hover .dropdown {
+    display: block !important;
+}
+
+
+.dropdown li {
+    transform: none; 
+    margin: 2px 0;
+    background-color: rgb(60, 20, 80); 
+}
+
+.dropdown li:hover {
+    background: darkorchid;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: darkorchid;
+    padding: 5px;
+    width: 100vw;
+    margin: 0px;
+    border-width: 0px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.foot1 {
+    float: left;
+}
+
+.foot2 {
+    float:right;
+    padding-right: 30px;
+}
+
+.job-board {
+    background-color: darkorchid;
+    text-align: center;
+    padding: 5px;
+}
+
+.job-tab {
+    position: flex;
+    background-color: rgb(120, 40, 160);
+    border-style: double;
+    border-color: grey;
+    border-top-right-radius: 30px;
+    border-width: 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.top-element {
+    align-self: flex-start;
+    text-align: left;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 75%;
+    margin-top: 0px;
+}
+
+.job-title {
+    font-weight: bold;
+    align-self: center;
+    background-color: rgb(120, 40, 160);
+}
+
+.wage {
+    text-align: right;
+    margin-bottom: 55px;
+    font-weight: bold;
+}
+
+/* 3. Larger screen configuration */
+
+@media (min-width: 1024px) {
+
+    .main-contain {
+        display: flex;
+    }
+  
+    .side-column {
+        flex: 1; 
+    }
+  
+    .center-column {
+        flex: 2;
+    }
+
+    /* .the-jobs {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .job {
+        display: flex;
+        width: 40%;
+    } */
+}

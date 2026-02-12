@@ -1,0 +1,196 @@
+<!-- 
+ 
+TASK 1 ( 5 pts )
+Horizontal tabbed menu
+with specified style (transform, transition, gradients, hover etc.)  
+
+TASK 2 ( 2 pts )
+2nd tab includes list of provinces and territories with flags as markers.
+Hovering over list item reveals size of province.
+
+TASK 3 ( 3 pts )
+Hovering over "My albera" menu item reveals a dropdown submenu.
+
+TASK 4 ( 5 pts )
+Rightmost section contains info about IT jobs and work opps.
+Footer is fixed.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all"/>
+    <title>Assignment 4</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>About Canada</h1>
+    </div>
+
+    <div class="main-contain">
+        <!-- Random facts -->
+        <div class="container side-column">
+            <p>Canada is actually HUGE</p>
+            <p>71% of the world's maple syrup comes from Canada</p>
+            <p>The Canada-US border is the longest international border between two countries in the world</p>
+            <p>The country spans six different time-zones</p>
+            <p>The country has more lakes than the rest of the world combined</p>
+        </div>
+
+        <!-- Horizontal Menu -->
+        <div class="menu center-column">
+            <nav class="tab-menu">
+                <ul>
+                    <li><a href="#tab1">Home</a></li>
+                    <li><a href="#tab2">Provinces & Territories</a></li>
+                    <li>My Alberta
+                    <!-- Dropdown Submenu -->
+                        <ul class="dropdown">
+                            <li><a href="#tab3">Public Holidays</a></li>
+                            <li><a href="#tab4">Provincial Parks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Content -->
+            <div class="panel-container">
+                <!-- Canada Flag -->
+                <div id="tab0" class="panel"><img src="images/canada_pic.jpg" alt="Canada Flag"></div>
+                <!-- Home -->
+                <div id="tab1" class="panel">
+                    <h2>Get to know Canada</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi 
+                        tristique senectus et netus et malesuada fames ac turpis 
+                        egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean 
+                        nec lorem. In porttitor. Donec laoreet nonummy augue. 
+                        Suspendisse dui purus, scelerisque at, vulputate vitae, 
+                        pretium mattis, nunc. Mauris eget neque at sem venenatis 
+                        eleifend. Ut nonummy.
+                    </p>
+                </div>
+                <!-- Provinces -->
+                <div id="tab2" class="panel">
+                    <h2>Canadian Provinces and Territories</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi 
+                        tristique senectus et netus et malesuada fames ac turpis 
+                        egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean 
+                        nec lorem. In porttitor. Donec laoreet nonummy augue. 
+                        Suspendisse dui purus, scelerisque at, vulputate vitae, 
+                        pretium mattis, nunc. Mauris eget neque at sem venenatis 
+                        eleifend. Ut nonummy.
+                    </p>
+                    <ul class="provinces">
+                        <li class="AB">Alberta <span> 661,848 sq km</span></li>
+                        <li class="BC">British Columbia <span> 944,735 sq km</span></li>
+                    </ul>
+                </div>
+                <!-- Alberta Holidays -->
+                <div id="tab3" class="panel">
+                    <h2>Alberta Public Holidays</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi 
+                        tristique senectus et netus et malesuada fames ac turpis 
+                        egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean 
+                        nec lorem. In porttitor. Donec laoreet nonummy augue. 
+                        Suspendisse dui purus, scelerisque at, vulputate vitae, 
+                        pretium mattis, nunc. Mauris eget neque at sem venenatis 
+                        eleifend. Ut nonummy.
+                    </p>
+                </div>
+                <!-- Alberta Parks -->
+                <div id="tab4" class="panel">
+                    <h2>National and Provincial Parks in Alberta</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi 
+                        tristique senectus et netus et malesuada fames ac turpis 
+                        egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean 
+                        nec lorem. In porttitor. Donec laoreet nonummy augue. 
+                        Suspendisse dui purus, scelerisque at, vulputate vitae, 
+                        pretium mattis, nunc. Mauris eget neque at sem venenatis 
+                        eleifend. Ut nonummy.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT JOBS -->
+        <div class="job-board side-column">
+            <h3>IT Work Opportunities</h3>
+
+            <div class="the-jobs">
+
+                <!-- CYBERSEC -->
+                <div class="job">
+                    <div class="job-tab">
+                        <p class="top-element" style="background-color: red;">MOST POPULAR</p>
+                        <p class="job-title">Cybersecurity Analyst</p>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna.
+                    </p>
+                    <p class="wage">$52.03 / hr</p>
+                </div>
+
+                <!-- IT Tech -->
+                <div class="job">
+                    <div class="job-tab">
+                        <p class="top-element" style="background-color: lime; color:forestgreen"">NEW</p>
+                        <p class="job-title">IT Technician</p>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna.
+                    </p>
+                    <p class="wage">$38.50 / hr</p>
+                </div>
+                <!-- IT Analyst -->
+
+                <div class="job">
+                    <div class="job-tab">
+                        <p class="top-element" style="background-color: lime; color:forestgreen">NEW</p>
+                        <p class="job-title">Senior Business IT Analyst</p>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed 
+                        pulvinar ultricies, purus lectus malesuada libero, sit amet 
+                        commodo magna eros quis urna.
+                    </p>
+                    <p class="wage">$120.00 / hr</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="foot1">© 2026 | NWP™</p>
+        <p class="foot2">All rights reserved</p>
+    </div>
+
+</body>
+</html>
