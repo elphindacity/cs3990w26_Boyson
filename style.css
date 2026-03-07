@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+}
+
+.header-container {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    & h1 {
+        margin: 0;
+    }
+}
+
+a {
+}
+
+a:hover {
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: royalblue;
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
