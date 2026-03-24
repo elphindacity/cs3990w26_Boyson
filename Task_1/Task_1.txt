@@ -1,0 +1,61 @@
+            TASK 1
+
+- 10 points
+
+Create the following modules to implement the following tasks:
+• myButton.js
+• myColorButton.js
+• myArrays.js
+• myFunctions.js
+• Main.js
+
+            MY BUTTON
+
+Create the class Button which has 3 initial properties: btnText, btnBgColor and btnTitle.
+
+Define a method named "show" within this class, 
+that render (display) the instance of the button by using document.write() method.
+
+• btnText – used to specify the label on the button’s instance;
+• btnBgColor – the background color of the the button’s instance;
+• btnTitle - specifies extra information about the button’s instance. 
+        This information is shown as a tooltip text when the mouse moves over the button’s instance.
+
+            MY ARRAYS
+
+Create 2 arrays (arrTexts, arrColors) to store 4 items in each array.
+    "Save Progress", "Click Me", "Download", "See More"
+    Green, Grey, Grey, Red
+
+            MY FUNCTION
+
+Define the function to generate 4 button’s instances like the following ones.
+
+Use forEach() method to loop through 2 arrays (simultaneously) to create 4 buttons.
+
+BtnTitle is a composition of btnText and btnBgColor based on the template “btnText is shown on the btnBgColor background”
+
+Hint: you need the following variation of forEach() method:
+    array1.forEach((element, index) {
+        //element is an item of array1
+        //index is used to get the item from array 2 with the same index as an element
+
+The created button’s instances are stored in the arrButtons.
+
+By using forEach() method loop through arrButtons array to display all buttons in
+the current document like shown below (define the function for this task):
+
+Note!!! You can get an element (button) from an array after some period of time.
+
+For example: you get (display) the first button (Save Progress), wait for 30 seconds,
+next button (Click me), wait for 30 seconds - another button (Download), etc.
+
+Hint: use forEach to loop the array with setTimeout () method not with setInterval().
+
+            MY COLOR BUTTON
+
+Create the class ColorButton with one more property (fColor) which will inherit from the Button class. 
+fColor is used to specify the font color of the button.
+Override show() method to render the instance of the button based on 4 properties
+(btnText, btnBgColor, btnTitle, fColor).
+Create and display one instance of the ColorButton.

@@ -1,0 +1,54 @@
+            TASK 2
+
+– 15 points
+
+There is a specified page template (you are not allowed to change it via HTML) - index.html.
+
+Create a News class that creates (render() method) a block (div or section or article) consisting of
+    • a title,
+    • an image,
+    • a paragraph with the news text,
+    • a like counter (initially 0),
+    • a button LIKE (clicking on it corresponds to approving this news – increase like counter value) 
+        - use onclick event attribute to set the event handler (incLikes() method of the class)
+    • a button HIDE (clicking on it corresponds to "hiding” this news 
+        an image the element will appear more transparent; 
+        a title and a paragraph will be displayed with a dark gray font color and a light gray background, 
+        a button LIKE will be disabled, the user can see it, but can’t click) 
+        use onclick event attribute to set the event handler (hide() method of the class)
+
+The class has a method show() for displaying the news 
+(which is a content created with render() method) in the specified block (method parameter). 
+
+The number of “likes” is displayed as a corresponding number of “star”-symbols (you can use &#9824;) below the title of the news.
+
+Create a function generatenews() to select the paragraphs in the DOM page 
+that are inside the content block (see the template above)
+
+This function also creates news item (the instance of the News class) for each such
+paragraph and displays it inside that paragraph (via method show() of the instance).
+
+Images recourses (string data for src attribute), titles and content for creating news
+are stored in the list of objects, like the following:
+
+// Array of objects
+let arrRecourses = [
+ {
+ srcImg: 'Images/1.jpg',
+ newsTitle: 'title1',
+ newsContent: ' Lorem ipsum, or lipsum as it is sometimes known, is dummy
+text used in laying out print, graphic or web designs. The passage is attributed
+to an unknown typesetter in the 15th century who is thought to have scrambled
+parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+'
+ },
+ .....,
+ {
+ srcImg: 'Images/2.jpg',
+ newsTitle: 'title2',
+ newsContent: ' The purpose of lorem ipsum is to create a natural looking block of text
+(sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without
+controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to
+be on design, not content.'
+}
+];
