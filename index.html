@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: darkslategray;
+        }
+        /* NAV BAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .nav-links button {
+            background: navy;
+            border: solid white 1px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        /* TASK 1 */
+        #number-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #news-container {
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #gen {
+            display: flex;
+            margin-top: 10px;
+            max-width: fit-content; 
+            align-items: center;
+            justify-self: center;
+        }
+
+        #number {
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        /* TASK 2 */
+        #color-container {
+            background-color: wheat;
+            color:brown;
+        }
+
+        #palette {
+            display: grid;
+            grid-template-columns: repeat(9, max-content);
+            padding: 5px;
+            justify-content: left;
+        }
+
+        /* TASK 3 */
+        #dropdown-container {
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        #dropdown-container::before {
+            content: "▶️";
+        }
+
+        #dropdown-container.open::before {
+            content: "🔽";
+        }
+
+        #dropdown-menu {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        #dropdown-menu li {
+            list-style-type: none;
+        }
+
+        #dropdown-menu li:hover {
+            color: red;
+        }
+
+        .emoji {
+            visibility: hidden;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 style="color:white;">Assignment 8</h2>
+        <div class="nav-links">
+            <button onclick="show_task('task1')">Task 1</button>
+            <button onclick="show_task('task2')">Task 2</button>
+            <button onclick="show_task('task3')">Task 3</button>
+            <button onclick="show_task('task4')">Task 4</button>
+        </div>
+    </nav>
+
+    <!-- TASK 1 -->
+     <div id="task1" class="page">
+        <h1>Task 1 : Number News Generator</h1>
+        <div id="number-container"></div>
+        <div id="gen-container"></div>
+        <div id="news-container"></div>
+    </div>
+
+    <!-- TASK 2 -->
+    <div id="task2" class="page" style="display: none;">
+        <h1>Task 2 : Color Palette</h1>
+        <div id="color-container">
+            <div id="palette"></div>
+            <div id="latin-text"></div>
+        </div>
+    </div> 
+
+    <!-- TASK 3 -->
+    <div id="task3" class="page" style="display: none;">
+        <h1>Task 3 : Drop Down Menu</h1>
+        <div id="dropdown-container">Sweets & Treats
+            <ul id="dropdown-menu">
+                <li><span class="emoji">🧁</span>Cupcakes</li>
+                <li><span class="emoji">🍪</span>Cookies</li>
+                <li><span class="emoji">🍦</span>Ice Cream</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TASK 4 -->
+    <div id="task4" class="page" style="display: none;">
+        <h1>Task 4 : Fruit Colors</h1>
+        <div id="colors">
+            <h2>Select Color</h2>
+        </div>
+        <div id="Fruits">
+            <ul>Fruits:</ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
