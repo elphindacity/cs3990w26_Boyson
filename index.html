@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <h1 id="heading">Final Project : Quiz Game</h1>
+
+    <!-- 1.2. Start Button with Hover Effect -->
+    <button id="start-btn">Start Game</button>
+
+    <div id="game-info" style="display:none;">
+        <div id="timer">Time: <span id="time-left">0</span>s</div>
+        <div id="score">Your Score: <span id="score-val">0</span></div>
+        <div id="feedback"></div>
+    </div>
+
+    <div id="game-board" style="display:none;"></div>
+
+    <!-- Your Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="Main.js"></script>
+</body>
+</html>
